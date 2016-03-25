@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>StockWatchX</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div ng-view></div>
+
+   <!-- public js -->
+   <script src="/js/highstock.js"></script>
+   <script src="/js/socket.io.js"></script>
+   <script src="/js/angular.min.js"></script>
+   <script src="/js/jquery-2.2.0.min.js"></script>
+   <script src="/js/tether.min.js"></script>
+   <script src="/js/bootstrap.min.js"></script>
+
+   <!-- main module -->
+   <script src="/main/app.module.js"></script>
+
+   <!-- third party module -->
+   <script src="/lib/angular-route.min.js"></script>
+   <script src="/lib/highcharts-ng.min.js"></script>
+   <script src="/lib/socket.min.js"></script>
+
+
+   <!--  common module -->
+   <script src="/common/common.module.js"></script>
+   <script src="/common/socketio.service.js"></script>
+   <script src="/common/stockData.service.js"></script>
+   <script src="/common/charthelper.service.js"></script>
+
+   <!-- stock module -->
+   <script src="/stock/stock.module.js"></script>
+   <script src="/stock/config.route.js"></script>
+   <script src="/stock/stock.controller.js"></script>
+
+  </body>
+</html>
