@@ -2,6 +2,14 @@
 	cursor:pointer;
 }
 
-#stock-input{
-	margin-bottom: 15px;
+input,button{
+	margin-bottom:15px; 
+}
+
+@media (max-width: 544px) {
+  	.btn-stock {
+  		margin-top:5px; 
+  		display:block;
+  		width:100%;
+  	}
 }

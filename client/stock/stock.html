@@ -10,7 +10,7 @@
 <section id="stock-detail">
 	<div class="container">
 		<div class="row">
-			 <div ng-repeat="stock in vm.stocks" class="col-xs-4">
+			 <div ng-repeat="stock in vm.stocks" class="col-xs-12 col-sm-4">
 			 	<div class="card card-block">
 			 		<span ng-click="vm.deleteStock(stock._id,$index)" class="pull-xs-right remove-stock">&times;</span>
 					<h4 class="card-title">{{stock.symbol}}</h4>
@@ -22,9 +22,9 @@
 </section>
 <section id="stock-input">
 	<form class="form-inline" ng-submit="vm.createStock()">
-		  <div class="col-xs-8 col-xs-offset-4">
+		  <div class="col-xs-12 col-sm-8 col-sm-offset-4">
 		  	<input ng-model="vm.data.symbol" type="text" class="form-control" placeholder="Enter stock symbol" required>
-			<button type="submit" class="btn btn-success">add</button>
+			<button type="submit" class="btn btn-success btn-stock">add</button>
 		  </div>
 	</form>
 </section>
